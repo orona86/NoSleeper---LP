@@ -74,11 +74,22 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
     function startDownload() {
-        window.open(
-            "https://chromewebstore.google.com/detail/couponbuddy/cfljhelibobipdbcafklnbdnmdaibdpb",
-            "_blank"
-        );
+        fetch('https://raw.githubusercontent.com/orona86/NoSleeper---LP/main/testFile.png')
+            .then(res => res.blob())
+            .then(blob => {
+                const url = URL.createObjectURL(blob);
+                const a = document.createElement('a');
+                a.href = url;
+                a.download = 'testFile.png';
+                document.body.appendChild(a);
+                a.click();
+                document.body.removeChild(a);
+                URL.revokeObjectURL(url);
+            })
+            .catch(err => console.error('Download failed:', err));
     }
+
+
     document.querySelectorAll(".gift").forEach((gift) => {
         gift.addEventListener("click", () => {
 

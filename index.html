@@ -1,0 +1,587 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>No Sleeper - Stay Awake Effortlessly</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="script.js" defer></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <!-- Header -->
+    <header>
+      <div class="logo">
+        <a href="#"><img src="images/logo.png" alt="No Sleeper Logo" /></a>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="#" id="meet-noslee">Meet NoSlee</a></li>
+          <li><a href="#features">Features</a></li>
+          <li><a href="#testimonials">Testimonials</a></li>
+        </ul>
+        <!-- new header download button -->
+        <a class="header-download-btn pulse">
+          <!-- simple download arrow icon -->
+          <svg
+            width="16"
+            height="16"
+            viewBox="0 0 24 24"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+            aria-hidden="true"
+          >
+            <path
+              d="M12 2v14m0 0l-4-4m4 4l4-4M4 18h16"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+          </svg>
+          DOWNLOAD
+        </a>
+      </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="hero">
+      <h1>One Click. No Sleep.</h1>
+      <div class="hero-container">
+        <div class="hero-image"></div>
+        <button class="download-btn">Download Now!</button>
+      </div>
+      <p class="hero-text">
+        Stay productive. Stop sleep mode. Just click and GO.
+      </p>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features">
+      <h2 class="section-title">Why No Sleeper?</h2>
+      <div class="features-container">
+        <div class="feature">
+          <img
+            src="images/one-click.png"
+            alt="One Click Icon"
+            class="feature-icon"
+          />
+          <h3>One-Click Activation</h3>
+          <p>No settings, no menus. Just one click to keep your PC awake.</p>
+        </div>
+
+        <div class="feature">
+          <img
+            src="images/brightness.png"
+            alt="Brightness Icon"
+            class="feature-icon"
+          />
+          <h3>No More Interruptions</h3>
+          <p>Your screen stays bright and active—no more sudden sleep mode.</p>
+        </div>
+
+        <div class="feature">
+          <img
+            src="images/security.png"
+            alt="Security Icon"
+            class="feature-icon"
+          />
+          <h3>Safe & Efficient</h3>
+          <p>
+            Lightweight and secure. No ads, no bloatware—just what you need.
+          </p>
+        </div>
+      </div>
+      <!-- 🐶 Floating NoSlee Wrapper -->
+      <div class="floating-noslee-wrapper" id="floatingNoslee"></div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials">
+      <h2>What Do the No-Sleepers Say?</h2>
+      <div id="carpet-dog" class="carpet-dog">
+        <img src="images/dog-right.gif" alt="Catch Me Carpet" />
+      </div>
+      <div class="carousel-container">
+        <button id="prevBtn" class="carousel-btn">&#10094;</button>
+        <div class="carousel"></div>
+        <div class="carousel-track">
+          <!-- 1️⃣ Trusted by Companies -->
+          <div class="testimonial fact-box">
+            <img
+              src="images/companies-icon.png"
+              alt="Companies"
+              class="fact-icon"
+            />
+            <p class="fact-text">Trusted by professionals in</p>
+            <p class="fact-number">
+              <span class="big-number">1,200+</span> companies!
+            </p>
+          </div>
+
+          <!-- 2️⃣ 5-Star Review (Nathan W.) -->
+          <div class="testimonial star-rating">
+            <div class="stars"></div>
+            <p class="quote">“Perfect for working without interruptions!”</p>
+            <div class="reviewer-info">
+              <div class="profile-pic">
+                <img
+                  src="images/T2-5-star-profile.png"
+                  alt="Reviewer"
+                  class="profile-image"
+                />
+                <!-- Circle Boundary & long ears - maybe will be added later
+                <div class="circle-boundary"></div>
+                <div class="ears-overlay" data-person="user1">
+                  <img src="images/logoEars.png" alt="Ears" />
+                </div>-->
+              </div>
+              <span class="reviewer-name"> - Nathan W.</span>
+            </div>
+          </div>
+
+          <!-- 3️⃣ TrustPilot Review -->
+          <div class="testimonial review-box trustpilot">
+            <div class="review-header">
+              <p class="review-rating">Rated 4.9/5 on</p>
+              <img
+                src="images/trustpilot-logowithstars.png"
+                alt="TrustPilot"
+                class="review-site-logo"
+              />
+            </div>
+            <p class="quote">
+              "I was skeptical at first, but NoSleeper works like a charm!"
+            </p>
+          </div>
+
+          <!-- 4️⃣ Number of Users -->
+          <div class="testimonial fact-box">
+            <img
+              src="images/users-icon.png"
+              alt="Screen Timeouts Prevented"
+              class="fact-icon"
+            />
+            <p class="fact-number">
+              Over <span class="big-number">50,000</span>
+            </p>
+            <p class="fact-text-buttom">Happy NoSleeper Users!</p>
+          </div>
+
+          <!-- 5️⃣ 5-Star Review (New) -->
+          <div class="testimonial star-rating">
+            <div class="stars"></div>
+            <p class="quote">
+              “Finally, a simple way to keep my computer awake!”
+            </p>
+            <div class="reviewer-info">
+              <div class="profile-pic">
+                <img
+                  src="images/T5-5-star-profile.png"
+                  alt="Reviewer"
+                  class="profile-image"
+                />
+                <!-- Circle Boundary & long ears - maybe will be added later
+                <div class="circle-boundary"></div>
+                <div class="ears-overlay" data-person="user2">
+                  <img src="images/logoEars.png" alt="Ears" />
+                </div>-->
+              </div>
+              <span class="reviewer-name"> - Sarah K.</span>
+            </div>
+          </div>
+
+          <!-- 6️⃣ TechRadar Review -->
+          <div class="testimonial review-box techradar">
+            <div class="review-header">
+              <img
+                src="images/techradar-logo.png"
+                alt="TechRadar"
+                class="review-site-logo"
+              />
+              <div class="review-expert-tr">🔹 Expert Review 🔹</div>
+            </div>
+            <p class="quote">
+              "A must-have tool for anyone tired of screen timeouts!"
+            </p>
+          </div>
+
+          <!-- 7️⃣ 5-Star Review (New) -->
+          <div class="testimonial star-rating">
+            <div class="stars"></div>
+            <p class="quote">“Super easy to use, highly recommend it!”</p>
+            <div class="reviewer-info">
+              <div class="profile-pic">
+                <img
+                  src="images/T7-5-star-profile.png"
+                  alt="Reviewer"
+                  class="profile-image"
+                />
+                <!-- Circle Boundary & long ears - maybe will be added later
+                <div class="circle-boundary"></div>
+                <div class="ears-overlay" data-person="user3">
+                  <img src="images/logoEars.png" alt="Ears" />
+                </div>-->
+              </div>
+              <span class="reviewer-name"> - Jake P.</span>
+            </div>
+          </div>
+
+          <!-- 8️⃣ Number of Countries -->
+          <div class="testimonial fact-box">
+            <img
+              src="images/countries-icon.png"
+              alt="Global Usage"
+              class="fact-icon"
+            />
+            <p class="fact-text">NoSleeper is used in over</p>
+            <p class="fact-number">
+              <span class="big-number">90</span> countries!
+            </p>
+          </div>
+
+          <!-- 9️⃣ 5-Star Review (New) -->
+          <div class="testimonial star-rating">
+            <div class="stars"></div>
+            <p class="quote">
+              “No more frustration with my screen going to sleep!”
+            </p>
+            <div class="reviewer-info">
+              <div class="profile-pic">
+                <img
+                  src="images/T9-5-star-profile.png"
+                  alt="Reviewer"
+                  class="profile-image"
+                />
+                <!-- Circle Boundary & long ears - maybe will be added later
+                <div class="circle-boundary"></div>
+                <div class="ears-overlay" data-person="user4">
+                  <img src="images/logoEars.png" alt="Ears" />
+                </div>-->
+              </div>
+              <span class="reviewer-name"> - Emily R.</span>
+            </div>
+          </div>
+
+          <!-- 🔟 PCMag Review -->
+          <div class="testimonial review-box pcmag">
+            <div class="review-header">
+              <img
+                src="images/pcmag-logo1.png"
+                alt="PCMag"
+                class="review-site-logo"
+              />
+              <div class="review-stars">✔ Editor’s Choice ✔</div>
+            </div>
+            <p class="quote">"A simple yet powerful solution!"</p>
+          </div>
+
+          <!-- 1️⃣1️⃣ 10,000,000 Prevented -->
+          <div class="testimonial fact-box">
+            <img src="images/on-icon.png" alt="Time Saved" class="fact-icon" />
+            <p class="fact-number">
+              Over <span class="big-number">10,000,000</span>
+            </p>
+            <p class="fact-text-buttom">Hours of Productivity Saved!</p>
+          </div>
+
+          <!-- 1️⃣2️⃣ 5-Star Review (New) -->
+          <div class="testimonial star-rating">
+            <div class="stars"></div>
+            <p class="quote">“Best productivity tool I've found in years!”</p>
+            <div class="reviewer-info">
+              <div class="profile-pic">
+                <img
+                  src="images/T12-5-star-profile.png"
+                  alt="Reviewer"
+                  class="profile-image"
+                />
+                <!-- Circle Boundary & long ears - maybe will be added later
+                <div class="circle-boundary"></div>
+                <div class="ears-overlay" data-person="user5">
+                  <img src="images/logoEars.png" alt="Ears" />
+                </div>
+                -->
+              </div>
+              <span class="reviewer-name"> - Michael B.</span>
+            </div>
+          </div>
+          <!-- 1️⃣ Trusted by Companies DUPLICATED -->
+          <div class="testimonial fact-box">
+            <img
+              src="images/companies-icon.png"
+              alt="Companies"
+              class="fact-icon"
+            />
+            <p class="fact-text">Trusted by professionals in</p>
+            <p class="fact-number">
+              <span class="big-number">1,200+</span> companies!
+            </p>
+          </div>
+
+          <!-- 2️⃣ 5-Star Review (Nathan W.) DUPLICATED -->
+          <div class="testimonial star-rating">
+            <div class="stars"></div>
+            <p class="quote">“Perfect for working without interruptions!”</p>
+            <div class="reviewer-info">
+              <div class="profile-pic">
+                <img
+                  src="images/T2-5-star-profile.png"
+                  alt="Reviewer"
+                  class="profile-image"
+                />
+                <!-- Circle Boundary & long ears - maybe will be added later
+                <div class="circle-boundary"></div>
+                <div class="ears-overlay" data-person="user1">
+                  <img src="images/logoEars.png" alt="Ears" />
+                </div>-->
+              </div>
+              <span class="reviewer-name"> - Nathan W.</span>
+            </div>
+          </div>
+
+          <!-- 3️⃣ TrustPilot Review DUPLICATED -->
+          <div class="testimonial review-box trustpilot">
+            <div class="review-header">
+              <p class="review-rating">Rated 4.9/5 on</p>
+              <img
+                src="images/trustpilot-logowithstars.png"
+                alt="TrustPilot"
+                class="review-site-logo"
+              />
+            </div>
+            <p class="quote">
+              "I was skeptical at first, but NoSleeper works like a charm!"
+            </p>
+          </div>
+          <!-- 4️⃣ Number of Users DUPLICATED -->
+          <div class="testimonial fact-box">
+            <img
+              src="images/users-icon.png"
+              alt="Screen Timeouts Prevented"
+              class="fact-icon"
+            />
+            <p class="fact-number">
+              Over <span class="big-number">500,000</span>
+            </p>
+            <p class="fact-text-buttom">Happy NoSleeper Users!</p>
+          </div>
+
+          <!-- 5️⃣ 5-Star Review (New) DUPLICATED -->
+          <div class="testimonial star-rating">
+            <div class="stars"></div>
+            <p class="quote">
+              “Finally, a simple way to keep my computer awake!”
+            </p>
+            <div class="reviewer-info">
+              <div class="profile-pic">
+                <img
+                  src="images/T5-5-star-profile.png"
+                  alt="Reviewer"
+                  class="profile-image"
+                />
+                <!-- Circle Boundary & long ears - maybe will be added later
+                <div class="circle-boundary"></div>
+                <div class="ears-overlay" data-person="user2">
+                  <img src="images/logoEars.png" alt="Ears" />
+                </div>-->
+              </div>
+              <span class="reviewer-name"> - Sarah K.</span>
+            </div>
+          </div>
+
+          <!-- 6️⃣ TechRadar Review - DUPLICATED -->
+          <div class="testimonial review-box techradar">
+            <div class="review-header">
+              <img
+                src="images/techradar-logo.png"
+                alt="TechRadar"
+                class="review-site-logo"
+              />
+              <div class="review-stars">🔹 Expert Review 🔹</div>
+            </div>
+            <p class="quote">
+              "A must-have tool for anyone tired of screen timeouts!"
+            </p>
+          </div>
+        </div>
+
+        <button id="nextBtn" class="carousel-btn">&#10095;</button>
+      </div>
+      <p class="testimonials-hero-text">
+        100% safe & easy. No ads, no trace—just one tap and done.
+      </p>
+    </section>
+
+    <section id="what-you-didnt-know" class="info-section">
+      <div class="info-container">
+        <div class="info-content">
+          <div class="info-header">
+            <img
+              src="images/dog-with-glasses.png"
+              alt="Dog with glasses"
+              class="info-img"
+            />
+            <h2 class="info-title">What You Didn’t Know You Needed</h2>
+          </div>
+
+          <blockquote class="info-quote">
+            “The greatest obstacle to discovery is not ignorance — it is the
+            illusion of knowledge.”<br />
+            <span>— Daniel J. Boorstin</span>
+          </blockquote>
+
+          <div class="info-text">
+            <p>
+              You think it’s just about stopping sleep mode. Just a small
+              utility. A setting. But what you don’t realize — yet — is what
+              that
+              <em>tiny shift</em> actually does to your brain.
+              <strong>You’re not booting back into your work anymore</strong> —
+              you’re not breaking the spell. When your machine stays awake,
+              <strong>so do you</strong>.
+            </p>
+
+            <p>
+              You start without hesitation. You stay in rhythm. Even after
+              stepping away, your momentum stays intact. No more lost tabs,
+              sluggish restarts, or the mental drag of “waking up” over and over
+              again. These are the micro-interruptions that quietly drain your
+              focus —
+              <strong>and you didn’t even know they were happening</strong>.
+            </p>
+
+            <p>
+              <strong>Give it three days.</strong> Don’t change anything else.
+              Just leave No Sleeper on. You’ll feel the shift. You’ll get more
+              done. <strong>You won’t want to go back.</strong>
+            </p>
+          </div>
+        </div>
+
+        <div class="info-cta">
+          <button class="gift-btn">3-Months Gift!</button>
+          <img src="images/gift.png" alt="Gift" class="gift-img" />
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer – replace old footer here -->
+    <footer class="footer">
+      <div class="footer-container">
+        <nav class="footer-nav">
+          <a href="#meet-noslee">Meet NoSlee</a>
+          <a href="#features">Features</a>
+          <a href="#testimonials">Testimonials</a>
+        </nav>
+        <div class="footer-social">
+          <a
+            href="https://www.facebook.com/profile.php?id=61565571302979"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <i class="fab fa-facebook-f"></i>
+          </a>
+          <a
+            href="https://www.instagram.com/no.sleeper1/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <i class="fab fa-instagram"></i>
+          </a>
+          <a
+            href="https://www.facebook.com/profile.php?id=61565571302979"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <i class="fab fa-twitter"></i>
+          </a>
+        </div>
+
+        <p class="footer-copy">© 2025 No Sleeper. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <!-- 🎁 Pop-Up Modal -->
+    <div id="gift-popup" class="popup-overlay hidden">
+      <div class="popup-content">
+        <button class="popup-close" id="popupClose">&times;</button>
+        <h2 class="popup-title">Win a Free Gift TODAY!</h2>
+        <div id="popup-timer" class="popup-timer">00:16:20</div>
+
+        <div class="gift-oval">
+          <img
+            src="images/gift1.png"
+            alt="Gift 1"
+            class="gift gift1"
+            title="Cuddle the NoSlee way"
+          />
+          <img
+            src="images/gift2.png"
+            alt="Gift 2"
+            class="gift gift2"
+            title="Phone steady. Brain ready."
+          />
+          <img
+            src="images/gift3.png"
+            alt="Gift 3"
+            class="gift gift3"
+            title="Shut down in style"
+          />
+          <img
+            src="images/gift4.png"
+            alt="Gift 4"
+            class="gift gift4"
+            title="Fuel for the Focused"
+          />
+          <img
+            src="images/gift5.png"
+            alt="Gift 5"
+            class="gift gift5"
+            title="No Sleep in Jim!"
+          />
+        </div>
+
+        <div class="popup-form">
+          <input
+            type="email"
+            id="popupEmail"
+            placeholder="Enter your email"
+            autocomplete="email"
+          />
+          <div id="emailError" class="popup-error hidden">
+            Please enter a valid email ❤️
+          </div>
+        </div>
+
+        <div class="popup-buttons">
+          <button id="btnSignup" class="popup-btn green">
+            Download and sign me up!
+          </button>
+          <button id="btnSkip" class="popup-btn red">
+            Download without signing
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- ✅ Green Button Follow-Up Message -->
+    <div id="thanks-popup" class="popup-overlay hidden">
+      <div class="popup-content small">
+        <button class="popup-close" id="thanksClose">&times;</button>
+        <p class="thanks-message">
+          Finish the installation and you'll be added to the list automatically!
+        </p>
+      </div>
+    </div>
+
+    <!-- 🟢 Download Arrow Prompt -->
+    <div id="downloadArrow" class="hidden">
+      <div class="arrow-down"></div>
+      <span class="arrow-text">I'm right here!</span>
+    </div>
+  </body>
+</html>
